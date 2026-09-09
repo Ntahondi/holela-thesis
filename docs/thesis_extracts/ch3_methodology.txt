@@ -1,0 +1,62 @@
+CHAPTER 3: RESEARCH METHODOLOGY
+Linked to: All Objectives (methodological justification)  |  Est. 10,000–13,000 words
+
+Chapter 3 is the 'how' chapter — it explains and justifies every decision made about how the research was conducted. The cardinal rule is: every methodological choice must be justified, not just described. Do not say 'a questionnaire was used'; say 'a structured questionnaire was used because [reason], which is appropriate for this study because [alignment with objectives].' The chapter must demonstrate that the research design is coherent, rigorous, and capable of generating the evidence needed to answer the research questions and test the hypotheses. Write this chapter as if a highly sceptical examiner is reading it who will challenge every choice.
+
+3.1  Introduction
+State the purpose of the chapter. Provide a one-paragraph overview of the research design. Introduce the research 'onion' (Saunders et al., 2009) as the organisational framework for this chapter — philosophy → approach → strategy → methods → time horizon → data collection.
+3.2  Research Philosophy
+3.2.1  Ontological Position
+3.2.2  Epistemological Stance
+3.2.3  Pragmatism as the Guiding Philosophy — Justification
+Justify pragmatism as the philosophy of this study: it values practical outcomes, legitimises mixed methods, and is suited to problem-solving research. Contrast briefly with positivism and interpretivism to show why pragmatism is the superior fit for an applied, framework-development study.
+3.3  Research Approach and Design
+3.3.1  Mixed-Methods Design — Rationale
+3.3.2  Applied Research Justification
+3.3.3  Design Science Research (DSR) as the Parent Methodology for Framework Development
+This is a critical section. Explain DSR's six-activity cycle (Hevner et al., 2004; Peffers et al., 2007) and map each DSR activity to a specific phase or output of this research. Show how DSR 'wraps around' the conventional social science methods (questionnaire, interview, Delphi) and provides the framework for turning empirical findings into a validated artefact. Include a mapping table: DSR Activity vs. Research Phase vs. Methods vs. Output.
+3.3.4  Three-Phase Research Design
+Present the three-phase design (Phase 1: Investigation; Phase 2: Model Development and Parameter Validation; Phase 3: Framework Development and Validation) as a structured narrative. Include a research design diagram (describable as a text figure).
+3.4  Population and Sampling
+3.4.1  Target Population Definition
+3.4.2  Purposive Non-Probabilistic Sampling — Justification
+3.4.3  Sample Size Determination (Theory of Saturation)
+3.4.4  Sampling for Each Data Collection Method
+3.5  Data Collection Methods
+Principle: Each method must be justified in relation to specific research questions/objectives. Show how the methods are complementary and how triangulation is achieved.
+3.5.1  Systematic Literature Review — Protocol and Search Strategy
+3.5.2  Structured Questionnaire Survey — Design, Piloting, Distribution
+Explain questionnaire design: Likert-scale construction; pilot testing; validity and reliability checks (Cronbach's Alpha for internal consistency); stratification by sector; distribution method. Include a table showing how each questionnaire section maps to a specific objective.
+3.5.3  Semi-Structured Expert Interviews — Protocol and Conduct
+Interview schedule design; purposive selection of interviewees; procedures for scheduling, recording (with consent), transcription, and member-checking. Explain why semi-structured format is preferred over structured or unstructured for this context.
+3.5.4  Two-Round Delphi Expert Study — Design and Administration
+Explain Delphi round structure: Round 1 (open-ended, generates parameter list); Round 2 (rates importance, seeks convergence). Consensus criterion (IQR ≤ 1 or ≥ 75% agreement). Expert selection criteria and panel composition. Address Delphi limitations and mitigations.
+3.5.5  IoT Network Assessment — Protocol
+Data sources: TCRA network coverage reports; operator technical specifications; site visits to selected infrastructure locations. Assessment criteria: coverage type (4G/NB-IoT/LoRaWAN), signal strength, latency, cost.
+3.5.6  Deep Learning Model Development — Technical Protocol
+Data collection: structural health monitoring datasets (public and locally collected). Python 3.12 / TensorFlow / Keras. CNN architecture design and hyperparameter selection. Training, validation, and test split (e.g. 70/15/15). Performance metrics: accuracy, precision, recall, F1-score, AUC-ROC. Cross-validation strategy.
+3.6  Data Analysis Methods
+3.6.1  Qualitative Analysis — Thematic Analysis in Nvivo 12
+Coding procedure (open, axial, selective); theme development; inter-rater reliability check; member-checking for validity.
+3.6.2  Quantitative Analysis — Relative Importance Index (RII) and Descriptive Statistics
+RII formula and interpretation; ranking methodology; frequency and mean score analysis; appropriate inferential tests (chi-square, Kruskal–Wallis for non-parametric comparisons across groups).
+3.6.3  Data Triangulation Strategy
+Explain how the four data sources (literature, interviews, Delphi, questionnaire) are triangulated. Include a triangulation matrix table showing which sources address which research questions.
+3.6.4  Interpretive Structural Modelling (ISM) — Method
+Step-by-step ISM procedure: contextual relationship matrix; reachability matrix; partition levels; digraph construction; interpretive model development. Reference standard ISM procedure from Warfield (1974) and Jharkharia & Shankar (2005).
+3.6.5  Total Interpretive Structural Modelling (TISM) — Extension
+Explain TISM as ISM + interpretive relationships. For every directional link in the digraph, an explicit 'if-then' interpretive statement is required explaining why/how Parameter A influences Parameter B. Cite Sushil (2012) as the primary TISM reference. Show how TISM provides the relational architecture for the SMMS framework design.
+3.6.6  DSR Framework Development and Evaluation Protocol
+Map DSR's evaluation phase to: framework demonstration on a case study project; expert validation workshop (structured evaluation instrument); and framework refinement based on feedback. Specify the validation criteria: completeness, applicability, practicality, innovation, and sustainability alignment.
+3.7  Research Quality Assurance
+3.7.1  Validity (Internal and External)
+3.7.2  Reliability
+3.7.3  Credibility and Transferability
+3.7.4  Reflexivity and Researcher Positionality
+3.8  Ethical Considerations
+Informed consent; confidentiality; voluntary participation; data protection and retention; honesty in reporting. Reference UDSM ethical clearance process.
+3.9  Summary
+Summarise the research design as a coherent whole. Confirm that the design is capable of generating the evidence needed to answer all five research questions and achieve all five objectives.
+Expected Output: A fully justified, coherent research design demonstrating methodological rigour across philosophy, approach, methods, and analysis — approximately 10,000–13,000 words.
+
+

@@ -1,0 +1,79 @@
+CHAPTER 5: KEY SMMS PARAMETERS, DECISION-MAKING SYSTEM, AND DEEP LEARNING PREDICTIVE MAINTENANCE MODEL
+Linked to: Objectives (b), (c), (d)  |  Est. 16,000–20,000 words
+
+Chapter 5 is the most technically complex chapter and the largest empirical chapter. It answers Research Questions 2, 3, 4, and 5 simultaneously. It is divided into three major parts: (A) the identification and validation of key SMMS parameters; (B) the development and validation of the CNN deep learning model for predictive maintenance of concrete structures; and (C) the TISM-based modelling of the structural relationships between SMMS parameters and decision-making criteria. Each part draws on different methods (Delphi + RII for Part A; Python/TensorFlow for Part B; TISM for Part C) but they are unified by the common purpose of generating the analytical inputs for the SMMS framework in Chapter 6.
+
+5.1  Introduction
+State the chapter's three-part structure and link each part to its specific objectives and research questions.
+
+PART A — Key Parameters of the Smart Maintenance Management System (SMMS)
+
+5.2  Preliminary SMMS Parameter List from Literature
+Present the preliminary list of SMMS parameters derived from the systematic literature review. Organise by category: IoT/data collection parameters; analytics/AI parameters; BIM/digital twin parameters; GIS/spatial parameters; decision-making parameters; institutional/organisational parameters. This list is the input to the Delphi study.
+5.3  Delphi Study Findings — Round 1
+5.3.1  Expert Panel Profile and Round 1 Response Rate
+5.3.2  New Parameters Identified in Round 1
+5.3.3  Parameters Recommended for Consolidation or Removal
+5.3.4  Revised Parameter List after Round 1
+5.4  Delphi Study Findings — Round 2
+5.4.1  Round 2 Response Rate and Consensus Achievement
+5.4.2  Parameter Importance Rankings (Mean Score and IQR)
+5.4.3  Consensus Level by Parameter Category
+5.4.4  Final Validated SMMS Parameter Set
+Methodological Note: Present the IQR for each parameter as the consensus measure. Parameters with IQR ≤ 1.0 are considered consensus-achieved. For non-consensus parameters, report the distribution and note expert disagreement as a finding in itself — disagreement about a parameter may signal a genuine knowledge gap.
+5.5  SMMS Parameters — Questionnaire Validation (RII Analysis)
+Cross-validate the Delphi parameter rankings against the broader questionnaire survey using RII. Present a combined ranking table showing Delphi Mean Score, RII Score, and Combined Rank for each parameter. Identify the top 20 most critical SMMS parameters.
+
+PART B — Deep Learning Predictive Maintenance Model for Concrete Structures
+
+5.6  IoT Sensor Selection for Concrete Infrastructure Monitoring
+5.6.1  Structural Health Monitoring Parameters for Concrete (strain, crack, vibration, corrosion, moisture)
+5.6.2  Available IoT Sensor Technologies: Specifications and Cost Comparison
+5.6.3  Sensor Selection Criteria for the Tanzanian Context
+5.6.4  Recommended IoT Sensor Configuration for SMMS Deployment
+Expected Output: A justified sensor selection specification table suited to Tanzania's concrete infrastructure types and network conditions.
+5.7  Data Collection for Model Training
+5.7.1  Public Structural Health Monitoring Datasets Used
+5.7.2  Locally Collected IoT Sensor Data: Sites, Period, Parameters
+5.7.3  Dataset Integration and Harmonisation
+5.7.4  Data Quality Assessment
+5.8  CNN Model Architecture and Development
+5.8.1  Data Preprocessing Pipeline
+5.8.2  Feature Engineering and Data Transformation
+5.8.3  CNN Architecture Design (Layers, Activation Functions, Optimiser)
+5.8.4  Hyperparameter Tuning
+5.8.5  Training, Validation, and Test Protocols
+Transparency Note: Include the Python code for the CNN architecture as an Appendix. Report all hyperparameters. State the hardware used for training (CPU/GPU specifications, cloud computing instance type). This level of detail is required for reproducibility.
+5.9  Model Performance and Evaluation
+5.9.1  Training and Validation Accuracy Curves
+5.9.2  Confusion Matrix and Classification Report
+5.9.3  Precision, Recall, F1-Score, and AUC-ROC Results
+5.9.4  Comparison with Benchmark Models (SVM, Random Forest, LSTM)
+5.9.5  Model Performance under Real-World Noise Conditions
+Test model performance on deliberately corrupted or incomplete input data to simulate real field conditions. Report performance degradation and discuss implications for deployment.
+Expected Output: A trained, validated CNN predictive maintenance model for concrete structures, with full performance metrics and comparison against benchmarks — a primary technical output of the thesis.
+
+PART C — Structural Relationship Modelling: ISM, TISM, and Intelligent Decision-Making Parameters
+
+5.10  Intelligent Maintenance Decision-Making Parameters
+5.10.1  Decision-Making Parameters from Literature and Delphi Findings
+5.10.2  Validated Decision-Making Parameter Set (RII-ranked)
+5.10.3  Decision Logic: From Sensor Data to Maintenance Action
+Describe the proposed decision logic chain: sensor trigger → anomaly detection → severity classification → maintenance recommendation → priority ranking → resource allocation. This is the conceptual architecture of the Intelligent Decision Support System (IDSS).
+5.11  ISM Analysis — Structural Relationships Between SMMS Parameters
+5.11.1  Contextual Relationship Development (Expert Panel Input)
+5.11.2  Structural Self-Interaction Matrix (SSIM)
+5.11.3  Reachability Matrix and Partition Levels
+5.11.4  ISM Digraph and Hierarchical Model
+5.11.5  MICMAC Analysis — Driving and Dependent Parameters
+MICMAC (Matrice d'Impacts Croisés Multiplication Appliqués à un Classement) analysis categorises parameters into: autonomous (low drive, low dependence); dependent (low drive, high dependence); linkage (high drive, high dependence); and independent/driver (high drive, low dependence). This identifies which parameters are the most strategically important for SMMS design.
+5.12  TISM Analysis — Interpretive Relationships
+5.12.1  Interpretive Statement Development for Each Relationship
+5.12.2  TISM Model — Enhanced Digraph with Interpretive Statements
+5.12.3  Implications of TISM Model for SMMS Framework Architecture
+Key Output: The TISM model is the primary analytical input to the SMMS framework design in Chapter 6. It tells the framework designer not just what is connected to what, but why and how — enabling an architecturally sound framework.
+5.13  Chapter Summary and Integration
+Integrate the findings of all three parts into a coherent summary. What do the validated SMMS parameters, the CNN model performance, and the TISM relationship model collectively tell us about what the SMMS framework must look like? Explicitly list the design requirements that Chapter 6 must satisfy.
+Expected Output: Validated SMMS parameter set; TISM relationship model; trained CNN model; design requirements for the SMMS framework — approximately 16,000–20,000 words total.
+
+

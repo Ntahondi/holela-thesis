@@ -1,0 +1,31 @@
+# SMMS Concrete Structural Health Monitoring & Predictive Maintenance AI Module
+# Python 3.12 requirements
+
+# Numerical, Data Processing & Signal Analysis
+numpy>=1.26.0,<2.1.0
+pandas>=2.2.0
+scipy>=1.12.0
+
+# Classical ML Baselines (SVM, Random Forest) & Evaluation Metrics
+scikit-learn>=1.4.0
+joblib>=1.3.2
+
+# Deep Learning Frameworks (1D-CNN, 2D-CNN, LSTM)
+# Note: torch CPU / CUDA builds or tensorflow
+torch>=2.2.0
+torchvision>=0.17.0
+
+# Visualization & Reporting (Thesis Chapter 5 Figures)
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Hyperparameter Optimization
+optuna>=3.6.0
+
+# Interactive Research & Data Ingestion
+jupyter>=1.0.0
+ipykernel>=6.29.0
+pillow>=10.2.0
+tqdm>=4.66.0
+requests>=2.31.0
+openpyxl>=3.1.2

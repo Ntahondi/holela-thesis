@@ -1,0 +1,54 @@
+# ==============================================================================
+# Docker Compose Orchestration for SMMS Doctoral Platform
+# Candidate: Paul Zablon Holela | Supervisor: Prof. John Makunza, CoET, UDSM
+# ==============================================================================
+
+version: '3.8'
+
+services:
+  # ----------------------------------------------------------------------------
+  # Layer 2: Platform Layer (FastAPI + PyTorch AI Inference Engine)
+  # ----------------------------------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: smms-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      - ./ai_models/weights:/app/ai_models/weights:ro
+      - ./ai_models/reports:/app/ai_models/reports:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - smms-net
+
+  # ----------------------------------------------------------------------------
+  # Layer 1 & 3: Field & Decision Presentation Layer (Flutter Web Client)
+  # ----------------------------------------------------------------------------
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: smms-client
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - smms-net
+
+networks:
+  smms-net:
+    driver: bridge

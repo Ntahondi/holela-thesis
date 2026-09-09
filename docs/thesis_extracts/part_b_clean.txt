@@ -1,0 +1,29 @@
+PART B — Deep Learning Predictive Maintenance Model for Concrete Structures
+
+5.6  IoT Sensor Selection for Concrete Infrastructure Monitoring
+5.6.1  Structural Health Monitoring Parameters for Concrete (strain, crack, vibration, corrosion, moisture)
+5.6.2  Available IoT Sensor Technologies: Specifications and Cost Comparison
+5.6.3  Sensor Selection Criteria for the Tanzanian Context
+5.6.4  Recommended IoT Sensor Configuration for SMMS Deployment
+Expected Output: A justified sensor selection specification table suited to Tanzania's concrete infrastructure types and network conditions.
+5.7  Data Collection for Model Training
+5.7.1  Public Structural Health Monitoring Datasets Used
+5.7.2  Locally Collected IoT Sensor Data: Sites, Period, Parameters
+5.7.3  Dataset Integration and Harmonisation
+5.7.4  Data Quality Assessment
+5.8  CNN Model Architecture and Development
+5.8.1  Data Preprocessing Pipeline
+5.8.2  Feature Engineering and Data Transformation
+5.8.3  CNN Architecture Design (Layers, Activation Functions, Optimiser)
+5.8.4  Hyperparameter Tuning
+5.8.5  Training, Validation, and Test Protocols
+Transparency Note: Include the Python code for the CNN architecture as an Appendix. Report all hyperparameters. State the hardware used for training (CPU/GPU specifications, cloud computing instance type). This level of detail is required for reproducibility.
+5.9  Model Performance and Evaluation
+5.9.1  Training and Validation Accuracy Curves
+5.9.2  Confusion Matrix and Classification Report
+5.9.3  Precision, Recall, F1-Score, and AUC-ROC Results
+5.9.4  Comparison with Benchmark Models (SVM, Random Forest, LSTM)
+5.9.5  Model Performance under Real-World Noise Conditions
+Test model performance on deliberately corrupted or incomplete input data to simulate real field conditions. Report performance degradation and discuss implications for deployment.
+Expected Output: A trained, validated CNN predictive maintenance model for concrete structures, with full performance metrics and comparison against benchmarks — a primary technical output of the thesis.
+

@@ -1,0 +1,84 @@
+# ==============================================================================
+# Git Ignore Configuration for SMMS Doctoral Platform (holela-thesis)
+# Candidate: Paul Zablon Holela | Supervisor: Prof. John Makunza, CoET, UDSM
+# ==============================================================================
+
+# Python Virtual Environments & Packages
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+# Python package build artifacts
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter & Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Large Datasets & Archives (> 100MB strictly excluded from Git)
+ai_models/data/raw/public/*.zip
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Retain gitkeep in directories to preserve structure
+!ai_models/data/raw/public/.gitkeep
+!ai_models/data/raw/local_telemetry/.gitkeep
+!ai_models/data/processed/.gitkeep
+
+# Flutter / Dart Client Build Artifacts & Caches
+client/.dart_tool/
+client/.flutter-plugins
+client/.flutter-plugins-dependencies
+client/.packages
+client/.pub-cache/
+client/.pub/
+client/build/
+.dart_tool/
+.packages
+
+# IDE & Editor Configurations
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Temporary Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Environment Variables & Local Secrets
+.env
+.env.local
+.env.*.local
+*.log
+
+# Docker Local State
+.docker/

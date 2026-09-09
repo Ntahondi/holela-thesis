@@ -1,0 +1,5 @@
+Model Architecture,accuracy,precision_weighted,recall_weighted,f1_weighted,roc_auc_macro
+Proposed 1D-CNN (Telemetry),0.9606,0.9626,0.9606,0.9605,0.9962
+Bi-LSTM Benchmark,0.9606,0.9653,0.9606,0.9617,0.9818
+SVM (RBF Kernel),0.8227,0.8432,0.8227,0.8145,0.9676
+Random Forest (100 Trees),0.9704,0.971,0.9704,0.9703,0.9987
